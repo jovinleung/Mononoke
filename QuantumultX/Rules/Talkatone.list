@@ -1,5 +1,5 @@
 # 规则名称: Talkatone
-# 规则统计: 13
+# 规则统计: 12
 
 HOST-SUFFIX,agkn.com,Talkatone
 HOST-SUFFIX,cohere.com,Talkatone
@@ -9,7 +9,6 @@ HOST-SUFFIX,ip-api.com,Talkatone
 HOST-SUFFIX,kochava.com,Talkatone
 HOST-SUFFIX,mobilefuse.com,Talkatone
 HOST-SUFFIX,talkatone.com,Talkatone
-HOST-SUFFIX,tktn.be,Talkatone
 IP-CIDR,205.164.56.0/24,Talkatone
 IP-CIDR,50.117.27.0/24,Talkatone
 IP-CIDR,63.251.124.0/24,Talkatone
