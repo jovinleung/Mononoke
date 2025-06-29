@@ -187,6 +187,7 @@ jobs:
                 "Prevent_DNS_Leaks.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Prevent_DNS_Leaks.list"
                 "Proxy.list https://ruleset.skk.moe/List/non_ip/global.conf"
                 "Talkatone.list https://raw.githubusercontent.com/jovinleung/Tool/main/Stash/Rules/Talkatone.list"
+                "TalkatoneAD.list https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Rules/TalkatoneAD.list"
                 "Telegram_NoIP.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Telegram_NoIP.list"
                 "Telegram.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/Telegram.list"
                 "TronLink.list https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Custom/TronLink.list"
