@@ -1,12 +1,6 @@
 # 规则名称: Talkatone
-# 规则统计: 13
+# 规则统计: 7
 
-HOST-SUFFIX,agkn.com,Talkatone
-HOST-SUFFIX,cohere.com,Talkatone
-HOST-SUFFIX,crashlytics.com,Talkatone
-HOST-SUFFIX,inmobi.com,Talkatone
-HOST-SUFFIX,ip-api.com,Talkatone
-HOST-SUFFIX,kochava.com,Talkatone
 HOST-SUFFIX,mobilefuse.com,Talkatone
 HOST-SUFFIX,talkatone.com,Talkatone
 HOST-SUFFIX,tktn.be,Talkatone

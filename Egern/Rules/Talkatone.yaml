@@ -1,14 +1,8 @@
 # 规则名称: Talkatone
-# 规则统计: 13
+# 规则统计: 7
 
 no_resolve: true
 domain_suffix_set:
-  - agkn.com
-  - cohere.com
-  - crashlytics.com
-  - inmobi.com
-  - ip-api.com
-  - kochava.com
   - mobilefuse.com
   - talkatone.com
   - tktn.be
