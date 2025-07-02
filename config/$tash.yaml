@@ -1,0 +1,293 @@
+mode: rule
+log-level: warning
+ipv6: false
+allow-lan: true
+mixed-port: 7890
+bind-address: "*"
+profile:
+  store-selected: false
+  store-fake-ip: true
+dns:
+  default-nameserver:
+    - 223.5.5.5
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+  skip-cert-verify: true
+subscribe-url: null
+benchmark:
+  url: http://1.1.1.1/generate_204
+  interval: 66
+  tolerance: 6
+  lazy: false
+countryFallback:
+  name: Fallback
+  type: fallback
+  url: http://1.1.1.1/generate_204
+  interval: 66
+  tolerance: 6
+  lazy: false
+  include-all: true
+  hidden: true
+proxyGroups:
+  proxies:
+    - $tash
+    - DegYax
+    - FishPort
+    - Argentina
+    - Australia
+    - China Mainland
+    - Hong Kong
+    - Japan
+    - Korea
+    - Macau
+    - Singapore
+    - Taiwan
+    - Turkey
+    - United States
+proxy-groups:
+  - name: Proxy
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/network.png
+    type: select
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: null
+    proxies:
+      - DegYax
+      - FishPort
+      - Argentina
+      - Australia
+      - China Mainland
+      - Hong Kong
+      - Japan
+      - Korea
+      - Macau
+      - Singapore
+      - Taiwan
+      - Turkey
+      - United States
+  - name: DegYax
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/degyax3.png
+    type: select
+    use:
+      - DegYax
+  - name: FishPort
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/fishport.png
+    type: select
+    use:
+      - FishPort
+  - name: Apple
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applespringloaded.png
+    type: select
+    proxies:
+      - Proxy
+      - DegYax
+      - FishPort
+      - Argentina
+      - Australia
+      - China Mainland
+      - Hong Kong
+      - Japan
+      - Korea
+      - Macau
+      - Singapore
+      - Taiwan
+      - Turkey
+      - United States
+  - name: Open AI
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/openai.png
+    type: select
+    proxies:
+      - Proxy
+      - DegYax
+      - FishPort
+      - Argentina
+      - Australia
+      - China Mainland
+      - Hong Kong
+      - Japan
+      - Korea
+      - Macau
+      - Singapore
+      - Taiwan
+      - Turkey
+      - United States
+  - name: Tencent International
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/tencent.png
+    type: select
+    proxies:
+      - Proxy
+      - DegYax
+      - FishPort
+      - Argentina
+      - Australia
+      - China Mainland
+      - Hong Kong
+      - Japan
+      - Korea
+      - Macau
+      - Singapore
+      - Taiwan
+      - Turkey
+      - United States
+  - name: Argentina
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/obeliscodebuenosaires.png
+    filter: .*Argentina.*
+  - name: Australia
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/sydneyoperahouse.png
+    filter: .*Australia.*
+  - name: China Mainland
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/thegreatwall.png
+    filter: .*China\ Mainland.*
+  - name: Hong Kong
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/skylines.png
+    filter: .*Hong\ Kong.*
+  - name: Japan
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/torii.png
+    filter: .*Japan.*
+  - name: Korea
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/gyeongbokgungpalace.png
+    filter: .*Korea.*
+  - name: Macau
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/ruinsofsaintpauls.png
+    filter: .*Macau.*
+  - name: Singapore
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/merlion.png
+    filter: .*Singapore.*
+  - name: Taiwan
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/taipei101.png
+    filter: .*Taiwan.*
+  - name: Turkey
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/sultanahmedmosque.png
+    filter: .*Turkey.*
+  - name: United States
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 66
+    tolerance: 6
+    lazy: false
+    include-all: true
+    hidden: true
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/statueofliberty.png
+    filter: .*United\ States.*
+rules:
+  - SCRIPT,QUIC,REJECT,no-track
+  - RULE-SET,HTTP DNS,REJECT,no-track
+  - RULE-SET,IP Mocking,Proxy
+  - RULE-SET,Apple China Mainland,China Mainland
+  - RULE-SET,Apple,Apple
+  - DOMAIN-SUFFIX,openai.com,Open AI
+  - IP-ASN,132203,Tencent International,no-resolve
+  - RULE-SET,ASN China Mainland,China Mainland,no-resolve
+  - MATCH,Proxy
+script:
+  shortcuts:
+    QUIC: network == 'udp' and dst_port == 443
+proxy-providers:
+  DegYax:
+    url: <suburl>
+    interval: 66666
+  FishPort:
+    url: <suburl>
+    interval: 66666
+ruleProvider:
+  behavior: domain
+  url: https://github.com/shindgewongxj/WHATSINStash/raw/main/ruleset/apple.yaml
+  interval: 66666
+rule-providers:
+  Apple:
+    behavior: domain
+    url: https://gist.githubusercontent.com/shindgewongxj/86d5330f12bd24598701f51365f602e1/raw/apple.yaml
+    interval: 66666
+  Apple China Mainland:
+    behavior: domain
+    url: https://gist.githubusercontent.com/shindgewongxj/86d5330f12bd24598701f51365f602e1/raw/applecdn.yaml
+    interval: 66666
+  ASN China Mainland:
+    behavior: classical
+    url: https://github.com/shindgewongxj/WHATSINStash/raw/main/ruleset/asncn.yaml
+    interval: 66666
+  IP Mocking:
+    behavior: domain
+    url: https://github.com/shindgewongxj/WHATSINStash/raw/main/ruleset/ipmocking.yaml
+    interval: 66666
+  HTTP DNS:
+    behavior: classical
+    url: https://github.com/shindgewongxj/WHATSINStash/raw/main/ruleset/httpdns.yaml
+    interval: 66666
